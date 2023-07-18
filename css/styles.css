@@ -3,8 +3,16 @@ html {
     scroll-behavior: smooth;
   }
 body {margin:0;
-padding: 0;}
+padding: 0;
+background:white ;
+color: black;
+}
 
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 .navbar {
     box-shadow: 10px 2px 30px rgb(1, 1, 1);
     display: flex;
@@ -156,3 +164,43 @@ footer h4 {
   #myBtn:hover {
     background-color: #555;
   }
+  .dark {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    padding: 10px;
+  }
+  .dark button {
+    display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #6d786d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  }
+  .dark button:hover {
+    background-color: #717571
+  }
+  .dark button:active {
+    background-color: #505f51;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+@media (prefers-color-scheme: dark){
+  .box1 img {
+    background-color: #fff;
+    color: #fff;
+    fill:#fff;
+  }
+  .card3 span{
+    color: black;
+  }
+}
